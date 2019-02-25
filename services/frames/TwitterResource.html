@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OSINT Search Portal by IntelTechniques</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">IntelTechniques OSINT Portal</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+               <br>
+				<a href="https://inteltechniques.com/menu.old.html" target="_parent"> Classic Version </a>
+                |
+                <a href="https://inteltechniques.com/book1.html" target="_parent"> OSINT Textbook </a>
+                |
+                <a href="https://inteltechniques.com/training/" target="_parent"> Video Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                   
+          </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-XXXXX fa-fw"></i> Target Data:</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-search fa-fw"></i> General Search:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="search.tool.html">Search Engines Tool</a>
+                                </li>
+                                <li>
+                                    <a href="search.links.html">Search Engine Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Email Address:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="email.tool.html">Email Tool</a>
+                                </li>
+                                <li>
+                                    <a href="email.links.html">Email Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook Profile:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="facebook.tool.html">Facebook Tool</a>
+                                </li>
+                                <li>
+                                    <a href="facebook.links.html">Facebook Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter Profile:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="twitter.tool.html">Twitter Tool</a>
+                                </li>
+                                <li>
+                                    <a href="twitter.links.html">Twitter Resources </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-instagram fa-fw"></i> Instagram Profile:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="instagram.tool.html">Instagram Tool</a>
+                                </li>
+                                <li>
+                                    <a href="instagram.links.html">Instagram Resources </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Real Name:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="person.tool.html">Person Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="person.links.html">Person Search Resources </a>
+                                </li>
+                                                                  </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-users fa-fw"></i> User Name:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                 <li>
+                                    <a href="username.tool.html">Username Tool</a>
+                                </li>
+                                <li>
+                                    <a href="username.links.html">Username Resources </a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-phone-square fa-fw"></i> Telephone Number:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="telephone.tool.html">Telephone Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="telephone.links.html">Telephone Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-globe fa-fw"></i> Domain Name:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="domain.tool.html">Domain Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="domain.links.html">Domain Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-globe fa-fw"></i> IP Address:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="ip.tool.html">IP Address Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="ip.links.html">IP Address Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-youtube fa-fw"></i> Video:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="youtube.tool.html">YouTube Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="reverse.video.tool.html">Reverse Video Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="video.links.html">Video Resources </a>
+                                </li>
+                                                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-image fa-fw"></i> Image:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="image.reverse.tool.html">Reverse Image Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="image.links.html">Image Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-file fa-fw"></i> Documents:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="document.tool.html">Document Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="document.links.html">Document Resources</a>
+                                </li>
+                                <li>
+                                    <a href="paste.tool.html">Paste Site Search Tool</a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-briefcase fa-fw"></i> Business:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="business.links.html">Business Resources </a>
+                                </li>
+                                <li>
+                                    <a href="linkedin.tool.html">LinkedIn Search Tool</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-reddit-square fa-fw"></i> Community:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="communities.tool.html">Online Communities Tool</a>
+                                </li>
+                                <li>
+                                    <a href="communities.links.html">Online Communities Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-map fa-fw"></i> Location:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="mapping.tool.html">Mapping Tool</a>
+                                </li>
+                                <li>
+                                    <a href="mapping.links.html">Mapping Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"></a>
+                            
+                        </li>
+
+
+						<li>
+                            <a href="#"><i class="fa fa-XXXXX fa-fw"></i> Online Resources:</a>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-desktop fa-fw"></i> Software:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="https://inteltechniques.com/buscador/" target="_blank">Buscador OSINT VM</a>
+                                </li>
+                                <li>
+                                    <a href="applications.html">OSINT Applications</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                       
+                       <li>
+                            <a href="#"><i class="fa fa-gavel fa-fw"></i> Public Records:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="public.links.html">Public Records Resources</a>
+                                </li>
+                            </ul>
+                      </li>
+
+<li>
+                            <a href="#"><i class="fa fa-arrow-right fa-fw"></i> OSINT Flow Charts:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flow.email.html">Email Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.user.html">Username Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.name.html">Name Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.phone.html">Telephone Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.domain.html">Domain Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.location.html">Location Workflow</a>
+                                </li>
+                            </ul>
+                      </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+      <div id="page-wrapper">
+            <br>
+        <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                              
+                                <div class="col-xs-9 text-left">
+								<div>&nbsp;&nbsp;Twitter Resources &nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="panel-footer">
+&nbsp;&nbsp;<a href="http://inteltechniques.com/osint/twitter.html" target="_blank">IntelTechniques Twitter Search Tool</a><br>
+&nbsp;&nbsp;<a href="https://tweetbeaver.com/" target="_blank">TweetBeaver Search Tool</a><br>
+&nbsp;&nbsp;<a href="http://twitter.com/search-advanced" target="_blank">Advanced Twitter Search </a><br>
+&nbsp;&nbsp;<a href="http://twitter.com/search?q=geocode%3A38.952451%2C-90.195011%2C1km&amp;src=typd" target="_blank">Twitter Location Search </a><br>
+&nbsp;&nbsp;<a href="http://twitter.com/search?q=Bomb%20since:2012-01-01%20until:2012-01-02" target="_blank">Twitter Time Search </a><br>
+&nbsp;&nbsp;<a href="http://tweeterid.com" target="_blank">TweeterID</a><br>
+&nbsp;&nbsp;<a href="http://allmytweets.net/index.php" target="_blank">All My Tweets </a><br>
+&nbsp;&nbsp;<a href="http://socialbearing.com" target="_blank">Social Bearing </a><br>
+&nbsp;&nbsp;<a href="http://ctrlq.org/first" target="_blank">First Tweet </a><br>
+&nbsp;&nbsp;<a href="http://tinfoleak.com" target="_blank">TinfoLeak </a><br>
+&nbsp;&nbsp;<a href="http://foller.me" target="_blank">FollerMe </a><br>
+&nbsp;&nbsp;<a href="http://geosocialfootprint.com" target="_blank">GeoSocial Footprint </a><br>
+&nbsp;&nbsp;<a href="http://mapd.csail.mit.edu/tweetmap" target="_blank">MIT Map </a><br>
+&nbsp;&nbsp;<a href="http://onemilliontweetmap.com" target="_blank">OMTM </a><br>
+&nbsp;&nbsp;<a href="http://web.tweetdeck.com" target="_blank">TweetDeck </a><br>
+&nbsp;&nbsp;<a href="http://hootsuite.com/feed/TEST+Search?pfilter=" target="_blank">HootSuite </a><br>
+&nbsp;&nbsp;<a href="http://twitterfall.com" target="_blank">Twitterfall </a><br>
+&nbsp;&nbsp;<a href="http://twitter.com/#!/who_to_follow" target="_blank">Twitter Name Search </a><br>
+&nbsp;&nbsp;<a href="http://fakers.statuspeople.com" target="_blank">Status People </a><br>
+&nbsp;&nbsp;<a href="http://tweetreach.com" target="_blank">TweetReach </a><br>
+&nbsp;&nbsp;<a href="http://twicsy.com" target="_blank">Twicsy </a><br>
+&nbsp;&nbsp;<a href="http://sleepingtime.org" target="_blank">SleepingTime </a><br>
+&nbsp;&nbsp;<a href="http://backtweets.com" target="_blank">BackTweets </a><br>
+&nbsp;&nbsp;<a href="http://followerwonk.com/analyze" target="_blank">Followerwonk Analysis</a><br>
+&nbsp;&nbsp;<a href="http://followerwonk.com/compare" target="_blank">Followerwonk Compare</a><br>
+&nbsp;&nbsp;<a href="http://followerwonk.com/bio/?q=construction&amp;l=nepal" target="_blank">Followerwonk Bios</a><br>
+&nbsp;&nbsp;<a href="https://stwity.com/IntelTechniques/" target="_blank">TwiCopy </a><br>
+&nbsp;&nbsp;<a href="https://spoonbill.io/data/inteltechniques/" target="_blank">SpoonBill </a><br>
+&nbsp;&nbsp;<a href="http://tweepsect.com" target="_blank">TweepSect </a><br>
+&nbsp;&nbsp;<a href="http://keyhole.co" target="_blank">Keyhole </a><br>
+&nbsp;&nbsp;<a href="http://twitter.com/i/directory/profiles" target="_blank">Twitter Directory </a><br>
+&nbsp;&nbsp;<a href="http://tinfoleak.com/" target="_blank">TinfoLeak</a><br>                              
+                              <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

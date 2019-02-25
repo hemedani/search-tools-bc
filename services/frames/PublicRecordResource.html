@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OSINT Search Portal by IntelTechniques</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+    <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">IntelTechniques OSINT Portal</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+               <br>
+				<a href="https://inteltechniques.com/menu.old.html" target="_parent"> Classic Version </a>
+                |
+                <a href="https://inteltechniques.com/book1.html" target="_parent"> OSINT Textbook </a>
+                |
+                <a href="https://inteltechniques.com/training/" target="_parent"> Video Training &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                   
+          </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-XXXXX fa-fw"></i> Target Data:</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-search fa-fw"></i> General Search:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="search.tool.html">Search Engines Tool</a>
+                                </li>
+                                <li>
+                                    <a href="search.links.html">Search Engine Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Email Address:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="email.tool.html">Email Tool</a>
+                                </li>
+                                <li>
+                                    <a href="email.links.html">Email Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook Profile:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="facebook.tool.html">Facebook Tool</a>
+                                </li>
+                                <li>
+                                    <a href="facebook.links.html">Facebook Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter Profile:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="twitter.tool.html">Twitter Tool</a>
+                                </li>
+                                <li>
+                                    <a href="twitter.links.html">Twitter Resources </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-instagram fa-fw"></i> Instagram Profile:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="instagram.tool.html">Instagram Tool</a>
+                                </li>
+                                <li>
+                                    <a href="instagram.links.html">Instagram Resources </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Real Name:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="person.tool.html">Person Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="person.links.html">Person Search Resources </a>
+                                </li>
+                                                                  </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-users fa-fw"></i> User Name:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                 <li>
+                                    <a href="username.tool.html">Username Tool</a>
+                                </li>
+                                <li>
+                                    <a href="username.links.html">Username Resources </a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-phone-square fa-fw"></i> Telephone Number:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="telephone.tool.html">Telephone Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="telephone.links.html">Telephone Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-globe fa-fw"></i> Domain Name:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="domain.tool.html">Domain Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="domain.links.html">Domain Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-globe fa-fw"></i> IP Address:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="ip.tool.html">IP Address Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="ip.links.html">IP Address Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-youtube fa-fw"></i> Video:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="youtube.tool.html">YouTube Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="reverse.video.tool.html">Reverse Video Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="video.links.html">Video Resources </a>
+                                </li>
+                                                            </ul>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-image fa-fw"></i> Image:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="image.reverse.tool.html">Reverse Image Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="image.links.html">Image Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-file fa-fw"></i> Documents:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="document.tool.html">Document Search Tool</a>
+                                </li>
+                                <li>
+                                    <a href="document.links.html">Document Resources</a>
+                                </li>
+                                <li>
+                                    <a href="paste.tool.html">Paste Site Search Tool</a>
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-briefcase fa-fw"></i> Business:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="business.links.html">Business Resources </a>
+                                </li>
+                                <li>
+                                    <a href="linkedin.tool.html">LinkedIn Search Tool</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-reddit-square fa-fw"></i> Community:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="communities.tool.html">Online Communities Tool</a>
+                                </li>
+                                <li>
+                                    <a href="communities.links.html">Online Communities Resources </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-map fa-fw"></i> Location:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="mapping.tool.html">Mapping Tool</a>
+                                </li>
+                                <li>
+                                    <a href="mapping.links.html">Mapping Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#"></a>
+                            
+                        </li>
+
+
+						<li>
+                            <a href="#"><i class="fa fa-XXXXX fa-fw"></i> Online Resources:</a>
+                        </li>
+                        
+                         <li>
+                            <a href="#"><i class="fa fa-desktop fa-fw"></i> Software:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="https://inteltechniques.com/buscador/" target="_blank">Buscador OSINT VM</a>
+                                </li>
+                                <li>
+                                    <a href="applications.html">OSINT Applications</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                       
+                       <li>
+                            <a href="#"><i class="fa fa-gavel fa-fw"></i> Public Records:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="public.links.html">Public Records Resources</a>
+                                </li>
+                            </ul>
+                      </li>
+
+<li>
+                            <a href="#"><i class="fa fa-arrow-right fa-fw"></i> OSINT Flow Charts:<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="flow.email.html">Email Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.user.html">Username Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.name.html">Name Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.phone.html">Telephone Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.domain.html">Domain Workflow</a>
+                                </li>
+                                <li>
+                                    <a href="flow.location.html">Location Workflow</a>
+                                </li>
+                            </ul>
+                      </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+      <div id="page-wrapper">
+            <br>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                              
+                                <div class="col-xs-9 text-left">
+								<div>&nbsp;&nbsp;Public Data Resources &nbsp;&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+&nbsp;&nbsp;<a href="http://blackbookonline.info" target="_blank">BlackBook Online</a><br>
+&nbsp;&nbsp;<a href="https://www.blackbookonline.info/USA-County-Court-Records.aspx" target="_blank">BlackBook County Court Records </a><br>
+&nbsp;&nbsp;<a href="https://www.blackbookonline.info/USA-Corporations.aspx" target="_blank">BlackBookCorporations Search </a><br>
+&nbsp;&nbsp;<a href="https://www.blackbookonline.info/USA-Counties.aspx" target="_blank">BlackBook County Search </a><br>
+&nbsp;&nbsp;<a href="http://voterrecords.com" target="_blank">Voter Records</a><br>
+&nbsp;&nbsp;<a href="http://publicrecords.onlinesearches.com" target="_blank">Public Records </a><br>
+&nbsp;&nbsp;<a href="http://snoopstation.com/" target="_blank">Nationwide County Court Records </a><br>
+&nbsp;&nbsp;<a href="https://unicourt.com/" target="_blank">UniCourt </a><br>
+&nbsp;&nbsp;<a href="http://opencorporates.com/" target="_blank">Open Corporates </a><br>
+&nbsp;&nbsp;<a href="https://www.foia.gov/search.html" target="_blank">FOIA Records </a><br>
+&nbsp;&nbsp;<a href="http://publicrecords.searchsystems.net" target="_blank">SearchSystems </a><br>
+&nbsp;&nbsp;<a href="http://moneyline.cq.com/pml/home.do" target="_blank">MoneyLine </a><br>
+&nbsp;&nbsp;<a href="http://melissadata.com/lookups/deathcheck.asp" target="_blank">MelissaData Death Check</a><br>
+&nbsp;&nbsp;<a href="http://melissadata.com/lookups/emails.asp" target="_blank">MelissaData Email Check</a><br>
+&nbsp;&nbsp;<a href="http://melissadata.com/lookups/propertyviewer.asp" target="_blank">MelissaData Property Check</a><br>
+&nbsp;&nbsp;<a href="http://melissadata.com/lookups/fec.asp" target="_blank">MelissaData Campaign Check </a><br>
+&nbsp;&nbsp;<a href="http://legacy.com/NS" target="_blank">Legacy </a><br>
+&nbsp;&nbsp;<a href="http://dobsearch.com/death-records" target="_blank">DOB Search </a><br>
+&nbsp;&nbsp;<a href="http://ssnvalidator.com/Default.aspx" target="_blank">SSN Validator </a><br>
+&nbsp;&nbsp;<a href="http://familysearch.org/search/collection/1202535" target="_blank">Birth / Death Index </a><br>
+&nbsp;&nbsp;<a href="http://search.ancestry.com/search/db.aspx?dbid=3693" target="_blank">SSN Death Index </a><br>
+&nbsp;&nbsp;<a href="http://integrascan.com" target="_blank">SSN Reversal </a><br>
+&nbsp;&nbsp;<a href="https://mailinglists.rootsweb.com/listindexes/" target="_blank">Marriage Records </a><br>
+&nbsp;&nbsp;<a href="http://sss.gov/RegVer/wfVerification.aspx" target="_blank">Military Registration </a><br>
+&nbsp;&nbsp;<a href="https://scra.dmdc.osd.mil/scra/" target="_blank">Military Personnel </a><br>
+&nbsp;&nbsp;<a href="http://dobsearch.com/business-lookup" target="_blank">DOB Search </a><br>
+&nbsp;&nbsp;<a href="http://google.org/publicalerts" target="_blank">Google Public Alerts </a><br>
+&nbsp;&nbsp;<a href="http://highprogrammer.com/cgi-bin/uniqueid/dl_il" target="_blank">High Programmer </a><br>
+
+
+                      <div class="clearfix"></div>
+            </div>
+                        </a>
+                    </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-9 text-left">
+                    <div>&nbsp;&nbsp;Crime Data Resources &nbsp;&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+&nbsp;&nbsp;<a href="http://familywatchdog.us" target="_blank">Familywatchdog </a><br>
+&nbsp;&nbsp;<a href="http://felonspy.com" target="_blank">Felonspy </a><br>
+&nbsp;&nbsp;<a href="http://theinmatelocator.com" target="_blank">Inmate Search-Nationwide </a><br>
+&nbsp;&nbsp;<a href="https://www.blackbookonline.info/criminalsearch.aspx" target="_blank">Criminal Search </a><br>
+              <div class="clearfix"></div>
+            </div>
+            </a> </div>
+		
+		<div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-9 text-left">
+                    <div>&nbsp;&nbsp;Financial Data Resources &nbsp;&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+&nbsp;&nbsp;<a href="http://walletexplorer.com" target="_blank">Wallet Explorer </a><br>
+&nbsp;&nbsp;<a href="http://bitcoinwhoswho.com/" target="_blank">Bitcoin Whois </a><br>
+&nbsp;&nbsp;<a href="https://blockchain.info/home" target="_blank">Block Chain </a><br>
+&nbsp;&nbsp;<a href="http://blockchain.info" target="_blank">BlockChain </a><br>
+&nbsp;&nbsp;<a href="http://tbg5-finance.org/?ibancheck.shtml" target="_blank">IBAN Info</a><br>
+
+              <div class="clearfix"></div>
+            </div>
+            </a></div>
+	
+	
+          <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-9 text-left">
+                    <div>&nbsp;&nbsp;Vehicles & Transportation Resources &nbsp;&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+&nbsp;&nbsp;<a href="http://nicb.org/theft_and_fraud_awareness/vincheck" target="_blank">VinCheck </a><br>
+&nbsp;&nbsp;<a href="http://checkthatvin.com/" target="_blank">VIN Lookup </a><br>
+&nbsp;&nbsp;<a href="http://vin.place" target="_blank">Vin Place </a><br>
+&nbsp;&nbsp;<a href="http://www.allvehicledata.com/" target="_blank">AllVehicleData Buyer Search </a><br>
+&nbsp;&nbsp;<a href="https://www.vindecoderz.com/EN/check-lookup/1gdhg396x81232971" target="_blank">Vin Coderz</a><br>
+&nbsp;&nbsp;<a href="http://reversegenie.com/plate.php" target="_blank">Reverse Genie Registration</a><br>
+&nbsp;&nbsp;<a href="https://recordsfinder.com/plate/" target="_blank">Records Finder Registration</a><br>
+&nbsp;&nbsp;<a href="https://www.carfax.com/processQuickVin.cfx" target="_blank">Carfax Registration</a><br>
+&nbsp;&nbsp;<a href="https://www.searchquarry.com/vehicle_records/" target="_blank">Search Quarry Registration</a><br>
+&nbsp;&nbsp;<a href="http://freebackgroundcheck.org/" target="_blank">Background Check Registration</a><br>
+&nbsp;&nbsp;<a href="https://www.autocheck.com/vehiclehistory/autocheck/en/search-by-license-plate" target="_blank">Auto Check Registration</a><br>
+&nbsp;&nbsp;<a href="https://www.vehiclehistory.com/license-plate-search.php" target="_blank">License Plate Search</a><br>
+&nbsp;&nbsp;<a href="https://carsowners.net/" target="_blank">Cars Owners</a><br>
+&nbsp;&nbsp;<a href="http://marinetraffic.com" target="_blank">Live Ship Map </a><br>
+&nbsp;&nbsp;<a href="http://boatinfoworld.com" target="_blank">Boat Info </a><br><br>
+				
+				&nbsp;&nbsp;Vehicle Registration to VIN:
+				
+				
+				<script type="text/javascript">
+function dovin1(plate,state) {
+window.open('https://www.vehiclehistory.com/licence-plate-search/actual-license-plate-api.php?license_plate=' + plate + '&state=' + state, 'frame1');
+}
+
+                    </script>
+</span>
+				    <form onSubmit="dovin1(this.plate.value,this.state.value); return false;">
+				      <span style="font-size: small">
+			          &nbsp;&nbsp;<input type="text" name="plate" size="20" placeholder="Registration Plate" />
+						  
+        <!-- Dropdown -->      
+       &nbsp;&nbsp; <select id='state' style='width: 150px;'>
+    <option value="Alabama">Alabama</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Arkansas">Arkansas</option>
+    <option value="California">California</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Connecticut">Connecticut</option>
+    <option value="Delaware">Delaware</option>
+    <option value="District Of Columbia">District Of Columbia</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Hawaii">Hawaii</option>
+    <option value="Idaho">Idaho</option>
+    <option value="Illinois">Illinois</option>
+    <option value="Indiana">Indiana</option>
+    <option value="Iowa">Iowa</option>
+    <option value="Kansas">Kansas</option>
+    <option value="Kentucky">Kentucky</option>
+    <option value="Louisiana">Louisiana</option>
+    <option value="Maine">Maine</option>
+    <option value="Maryland">Maryland</option>
+    <option value="Massachusetts">Massachusetts</option>
+    <option value="Michigan">Michigan</option>
+    <option value="Minnesota">Minnesota</option>
+    <option value="Mississippi">Mississippi</option>
+    <option value="Missouri">Missouri</option>
+    <option value="Montana">Montana</option>
+    <option value="Nebraska">Nebraska</option>
+    <option value="Nevada">Nevada</option>
+    <option value="New Hampshire">New Hampshire</option>
+    <option value="New Jersey">New Jersey</option>
+    <option value="New Mexico">New Mexico</option>
+    <option value="New York">New York</option>
+    <option value="North Carolina">North Carolina</option>
+    <option value="North Dakota">North Dakota</option>
+    <option value="Ohio">Ohio</option>
+    <option value="Oklahoma">Oklahoma</option>
+    <option value="Oregon">Oregon</option>
+    <option value="Pennsylvania">Pennsylvania</option>
+    <option value="Rhode Island">Rhode Island</option>
+    <option value="South Carolina">South Carolina</option>
+    <option value="South Dakota">South Dakota</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Texas">Texas</option>
+    <option value="Utah">Utah</option>
+    <option value="Vermont">Vermont</option>
+    <option value="Virginia">Virginia</option>
+    <option value="Washington">Washington</option>
+    <option value="West Virginia">West Virginia</option>
+    <option value="Wisconsin">Wisconsin</option>
+    <option value="Wyoming">Wyoming</option>
+        </select>  
+ 
+       	  	          <input type="submit" value="GO"/>
+						  
+						  
+
+
+						  
+						  
+			          <br />
+			          &nbsp;&nbsp;<iframe allowScriptAccess='always' name='frame1' id='frame1' width='350px' height='35' frameborder=1> </iframe>
+			          </span>
+			        </form>
+		
+		<br>
+		
+&nbsp;&nbsp;VIN to Vehicle Details:
+				
+				
+<script type="text/javascript">
+function dovin2(vin2) {
+window.open('https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/' + vin2 + '?format=json', 'vin2window');
+}
+
+                    </script>
+</span>
+				    <form onSubmit="dovin2(this.vin2.value); return false;">
+				      <span style="font-size: small">
+			          &nbsp;&nbsp;<input type="text" name="vin2" size="25" placeholder="VIN" />
+			          <input type="submit" value="GO"/>
+			          <br />
+
+			          </span>
+			        </form>		
+<br>
+
+ 
+ &nbsp;&nbsp; *Credit: illwill & sponkey<br>
+
+
+              <div class="clearfix"></div>
+            </div>
+            </a></div>
+          
+	
+	
+
+
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
