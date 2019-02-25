@@ -17,7 +17,7 @@ exports.encryotText = (req, res) => {
 };
 
 exports.decryptText = (req, res) => {
-  const { encrypted } = req.body;
-  const decrypted = CryptoJS.AES.decrypt(encrypted, secret).toString(CryptoJS.enc.Utf8);
+  const { encryptedPwd } = req.body;
+  const decrypted = CryptoJS.AES.decrypt(encryptedPwd, secret).toString(CryptoJS.enc.Utf8);
   return res.send({ decrypted });
 };
