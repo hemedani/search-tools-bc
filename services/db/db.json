@@ -2477,7 +2477,7 @@
                     ],
                     "submitValue": "Find User Number",
                     "itemType": "input",
-                    "onSubmit": "setSomeState",
+                    "onSubmit": "submitUrl",
                     "inSection": "Facebook Profile Search (Must be logged in)",
                     "isSubmitAll": false
                   },
